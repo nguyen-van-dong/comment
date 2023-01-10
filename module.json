@@ -1,0 +1,8 @@
+{
+    "name": "Comment",
+    "description": "Comment",
+    "namespace": "Module\\Comment\\",
+    "providers": [
+        "Module\\Comment\\CommentServiceProvider"
+    ]
+}

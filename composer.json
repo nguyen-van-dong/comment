@@ -1,0 +1,26 @@
+{
+    "name": "dnsoft/comment",
+    "description": "Module Comment","type": "library",
+    "authors": [
+        {
+            "name": "Dong Nguyen",
+            "email": "dong.joseph2810@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "dnsoft/core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Module\\Comment\\": "/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Module\\Comment\\CommentServiceProvider"
+            ]
+        }
+    }
+}
