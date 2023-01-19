@@ -1,5 +1,5 @@
 
-const socket = io('http://localhost:3003');
+const socket = io('http://51.79.160.219:3003');
 
 let getLocation = function (href) {
   let l = document.createElement("a");
@@ -17,7 +17,7 @@ socket.on('comment_approval', (data) => {
 });
 
 $(document).ready(function () {
-  let basePath = 'http://127.0.0.1:8000';
+  let basePath = $('#product_url').val();
   if ($('#comment-area').length > 0) {
     let customerToken = $('#customer_token').val();
     let url = basePath + `/comment/load-comment?page_url=${pageUrl}&customer_token=${customerToken}&post_id=${$('#post_id').val()}`;
