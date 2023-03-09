@@ -2,7 +2,7 @@
 
 namespace Module\Comment\Repositories\Eloquent;
 
-use Dnsoft\Core\Repositories\BaseRepository;
+use DnSoft\Core\Repositories\BaseRepository;
 use Module\Comment\Repositories\CustomerRepositoryInterface;
 
 class CustomerRepository extends BaseRepository implements CustomerRepositoryInterface

@@ -2,8 +2,8 @@
 
 namespace Module\Comment\Repositories\Eloquent;
 
-use Dnsoft\Core\Repositories\BaseRepository;
-use Dnsoft\Core\Repositories\NestedRepositoryTrait;
+use DnSoft\Core\Repositories\BaseRepository;
+use DnSoft\Core\Repositories\NestedRepositoryTrait;
 use Module\Comment\Repositories\CommentRepositoryInterface;
 use Request;
 

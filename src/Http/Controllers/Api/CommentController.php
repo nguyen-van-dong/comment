@@ -53,10 +53,11 @@ class CommentController extends Controller
         $customer_token = $request->customer_token;
         $post = Post::find($request->post_id);
         $items = $this->commentRepository->paginateTreePage($post, config('comment.paginate', 20));
+        $version = get_version_actived();
         if ($request->ajax()) {
-            $view = view('comment::web.comment.load-more', compact(['items', 'customer_token']))->render();
+            $view = view("comment::$version.web.comment.load-more", compact(['items', 'customer_token']))->render();
         } else {
-            $view = view('comment::web.comment.comment', compact(['items', 'customer_token']))->render();
+            $view = view("comment::$version.web.comment.comment", compact(['items', 'customer_token']))->render();
         }
         return response()->json(['success' => true, 'result' => $view]);
     }
@@ -115,7 +116,8 @@ class CommentController extends Controller
                 'item' => $item,
             ]);
         }
-        return view('comment::admin.comment.edit', compact('item'));
+        $version = get_version_actived();
+        return view("comment::$version.admin.comment.edit", compact('item'));
     }
 
     /**

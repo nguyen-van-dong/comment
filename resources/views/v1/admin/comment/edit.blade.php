@@ -1,4 +1,4 @@
-@extends('core::admin.master')
+@extends('core::v1.admin.master')
 
 @section('meta_title', __('comment::message.edit.page_title'))
 

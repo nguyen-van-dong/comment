@@ -1,0 +1,111 @@
+.comment {
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a.customer-name {
+  color: black;
+}
+
+.comment {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.customer-info {
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+.action-item {
+  margin-right: 10px;
+}
+
+.item-info {
+  padding: 8px;
+  border-radius: 5px;
+  width: 45%;
+  border: solid 1px #dad6d6;
+}
+
+@media screen and (max-width: 600px) {
+  .item-info {
+    width: 40%;
+  }
+}
+
+
+.item-info-reply {
+  padding: 8px;
+  border-radius: 5px;
+  width: 27%;
+  border: solid 1px #dad6d6;
+}
+
+.btn-send,
+.btnCancel {
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  border: 1px solid #dad6d6;
+}
+
+.btnCancel {
+  margin-left: 5px;
+}
+
+textarea {
+  margin: 0px;
+  width: 99%;
+}
+
+.update-comment {
+  padding: 7px;
+  background-color: #3467f7;
+  border-radius: 5px;
+  color: white;
+}
+
+.cancel-edit {
+  background-color: red;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.btnReply,
+#btnComment {
+  background-color: #91d0fd;
+}
+
+.comment-row {
+  display: none;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+#load-more {
+  margin-left: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px
+}
+
+.comment-edit {
+  width: 70%;
+  border-radius: 5px;
+  border: solid 1px #dad6d6;
+}
+
+.action-update {
+  margin-left: 5px;
+  padding: 7px;
+}
+
+.date_created {
+  margin-left: 15px;
+}

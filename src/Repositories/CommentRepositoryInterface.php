@@ -2,7 +2,7 @@
 
 namespace Module\Comment\Repositories;
 
-use Dnsoft\Core\Repositories\BaseRepositoryInterface;
+use DnSoft\Core\Repositories\BaseRepositoryInterface;
 use Illuminate\Database\Eloquent\Model;
 
 interface CommentRepositoryInterface extends BaseRepositoryInterface

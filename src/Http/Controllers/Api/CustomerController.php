@@ -22,13 +22,14 @@ class CustomerController extends Controller
     public function index(Request $request)
     {
         $items = $this->customerRepository->paginate($request->input('max', 20));
-
-        return view('comment::admin.comment.index', compact('items'));
+        $version = get_version_actived();
+        return view("comment::$version.admin.comment.index", compact('items'));
     }
 
     public function create()
     {
-        return view('comment::admin.comment.create');
+        $version = get_version_actived();
+        return view("comment::$version.admin.comment.create");
     }
 
     public function store(Request $request)
@@ -49,8 +50,8 @@ class CustomerController extends Controller
     public function edit($id)
     {
         $item = $this->customerRepository->find($id);
-
-        return view('comment::admin.comment.edit', compact('item'));
+        $version = get_version_actived();
+        return view("comment::$version.admin.comment.edit", compact('item'));
     }
 
     public function update(Request $request, $id)

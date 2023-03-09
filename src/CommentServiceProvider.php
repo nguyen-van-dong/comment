@@ -2,9 +2,9 @@
 
 namespace Module\Comment;
 
-use Dnsoft\Acl\Facades\Permission;
-use Dnsoft\Core\Events\CoreAdminMenuRegistered;
-use Dnsoft\Core\Support\BaseModuleServiceProvider;
+use DnSoft\Acl\Facades\Permission;
+use DnSoft\Core\Events\CoreAdminMenuRegistered;
+use DnSoft\Core\Support\BaseModuleServiceProvider;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
