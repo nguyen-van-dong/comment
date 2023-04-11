@@ -89,7 +89,7 @@ class CommentServiceProvider extends BaseModuleServiceProvider
                 'id' => 'comment_root',
                 'route' => 'comment.admin.comment.index',
                 'parent' => $menu->content->id,
-            ])->data('order', 2000);
+            ])->data('order', 2000)->prepend('<i class="far fa-file-alt"></i>');
         });
     }
 
