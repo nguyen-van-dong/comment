@@ -20,7 +20,7 @@ class CreateCommentCommentsTable extends Migration
             $table->text('content');
             $table->unsignedBigInteger('page_id')->nullable();
             $table->boolean('is_from_admin')->default(true);
-            $table->boolean('is_show_frontend')->default(false);
+            $table->boolean('is_published')->default(false);
             $table->nestedSet();
             $table->integer('like')->default(0);
             $table->integer('dislike')->default(0);
