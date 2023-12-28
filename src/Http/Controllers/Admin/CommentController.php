@@ -25,14 +25,14 @@ class CommentController extends Controller
     public function index(Request $request)
     {
         $items = $this->commentRepository->paginateTree($request->input('max', 20));
-        $version = get_version_actived();
-        return view("comment::$version.admin.comment.index", compact('items'));
+        
+        return view("comment::admin.comment.index", compact('items'));
     }
 
     public function create()
     {
-        $version = get_version_actived();
-        return view("comment::$version.admin.comment.create");
+        
+        return view("comment::admin.comment.create");
     }
 
     public function store(CommentRequest $request)
@@ -53,8 +53,8 @@ class CommentController extends Controller
     public function edit($id)
     {
         $item = $this->commentRepository->find($id);
-        $version = get_version_actived();
-        return view("comment::$version.admin.comment.edit", compact('item'));
+        
+        return view("comment::admin.comment.edit", compact('item'));
     }
 
     public function update(CommentRequest $request, $id)
